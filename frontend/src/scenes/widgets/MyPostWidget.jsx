@@ -68,7 +68,7 @@ const MyPostWidget = ({ picturePath }) => {
         picturePath : convertBase64
       }
       try {
-        const response = await axios.post(`http://localhost:3006/posts/create`, data, {
+        const response = await axios.post(`https://dropie-service.onrender.com/posts/create`, data, {
           headers: {
             Authorization: `Bearer ${token}`,
             'Content-Type': 'application/json', // Set the content type based on your data

@@ -38,7 +38,7 @@ import {
     const patchLike = async () => {
       try {
         const response = await axios.patch(
-          `http://localhost:3006/posts/${postId}/like`,
+          `https://dropie-service.onrender.com/posts/${postId}/like`,
           { userId: loggedInUserId },
           {
             headers: {

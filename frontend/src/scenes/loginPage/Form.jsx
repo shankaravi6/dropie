@@ -98,7 +98,7 @@ const Form = () => {
       picture: values.picture.name,
     };
     const savedUserResponse = await axios.post(
-      `http://localhost:3006/auth/register`,
+      `https://dropie-service.onrender.com/auth/register`,
       sendData
     );
 
@@ -111,7 +111,7 @@ const Form = () => {
   };
 
   const login = async (values, onSubmitProps) => {
-    const loggedInResponse = await fetch("http://localhost:3006/auth/login", {
+    const loggedInResponse = await fetch("https://dropie-service.onrender.com/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),
